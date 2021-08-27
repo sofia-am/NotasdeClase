@@ -11,7 +11,7 @@ las interrupciones se hacen por nivel, podemos definir si queremos que sea
 una interrupcion por flanco de subida o por flanco de bajada, o por ambos.
 (algo que no se podia configurar en el puerto RB0 por ejemplo)
 
-Port0 y Port2 se comparte el msmo vector de interrucion para interrupciones x¿externas
+`PORT0` y `PORT2` se comparte el msmo vector de interrucion para interrupciones externas
 
 registros asociados a manejar interrupciones:
 - intEnR - me permite habilitar las interrupciones si quiero que se interrumpa por flanco de subida
@@ -19,7 +19,7 @@ registros asociados a manejar interrupciones:
 - intStatR - registro que guarda el estado de las interrupciones por flanco de subida
 - intStatF -
 - intClr - limpio el registro de interrupciones (solo escritura)
-- intStatus - me permite saber si el que genero la interrupcion es GPIO0 o GPIO2
+- intStatus - me permite saber si el que genero la interrupcion es `GPIO0` o `GPIO2`
 
 despues de saber que puerto genero la interrupcion necesito saber en que pines
 se generó la interrupcion, ya que cualquier pin de ese puerto puede generar la interrupcion
@@ -31,9 +31,9 @@ P0.0 -> fuiste vos?
 else: ...
 solo pregunto por aquellos pines que se que van a generar interrupciones
 
-escribo un 1 en el registro IOIntClr -> limpio el flag de la interrupcion 
+escribo un 1 en el registro `IOIntClr` -> limpio el flag de la interrupcion 
 
-trucazo,utilizar funcines para las configuraciones, ejemplo confGPIO()
+trucazo,utilizar funcines para las configuraciones, ejemplo `confGPIO()`
 ```c
 void configGPIO(){
 	//interrupcion por flanco de subida
@@ -102,7 +102,7 @@ tabla 4, pin allocation table, podemos ver en que pines estan las funcionalidade
 las interrupciones son funcionalidades que se le dan a los pines, tal como le damos funcionalidad
 de GPIO, se determinan con PINSEL
 
-EINT0, EINT1, y EINT2 tien su propio vector de interrupcion ---> son interrupciones externas
+`EINT0`, `EINT1`, y `EINT2` tien su propio vector de interrupcion ---> son interrupciones externas
 
 diferencia entre interrupcion por puerto e interrupcion externa:
 interrupcion por puerto: pin seteado como GPIO
@@ -127,7 +127,5 @@ _¿si fuera EINT3 seria el mismo handler que para la interrupcion por puerto?_
 si, si fuera el caso GPIO como en el ejemplo anterior, tendriamos que además de preguntar
 en qué puerto se dio la interrupcion(ya que se comparten entre el puerto 0 y el 2, creo)
 , preguntar tambien si es una interrupcion por puerto ó una interrupcion externa.
-	return;	
-}
 
 ***tarea: leer systick, hacer las tareas.***
