@@ -81,3 +81,44 @@ Hay 3 categoria
 - Categoria 5 y 5e (hogares)
 - Categoria 6 (datacenters)
 
+### Tipo de medios de fibra
+
+Fibra monomodo (SMF)
+- Nucleo pequeño
+    
+Fibra multimodo (MMF)
+
+
+
+### Tipos de medios inalambricos
+Los estandares de la industria IEEE y de telecomunicaciones para comunicaciones de datos inalambricas cubren tanto la capa de enlace de datos de la capa fisica.
+
+- Metodos de codificacion de datos a señales de radio
+- Frecuencia e intensidad de la transmision}
+- Requisitos de recepcion 
+- 
+
+### LAN 
+
+## Capa de enlace de datos
+
+Capa 2 OSI, es el responsable de las comunicaciones entre las tarjetas de interfaz de reddell dipositivo final.
+ - permite que los protocolos de capa superior accedan a los medios de capa fisica
+ - encapsula los paquetes de capa 3 (IPv4 e IPv6) en tramas de capa 2
+ - tambien realiza la deteccion de errores y rechaza las tramas corruptas
+
+Sin la capa de enlace de datos, un protocolo de capa de red, tal como IP, tendria que tomar medidas para conectarse con todos los tipos de medios que pudieran existir a lo largo de la ruta de envio.
+
+el estandar IEEE separa la capa de enlace de datos en dos capas de LLC- Control de enlace logico y Control de acceso al medio
+
+El modelo OSI separa la capa ethernet en la capa fisica y en la capa de enlace de datos
+
+### Subcapa LLC
+
+Se comunica entre el software de red en las capas superiores y el hardware del dispositivo en capapas inferiores. Coloca en la trama la indormacion que identifica que protocolo de capa de red se utiliza para la trama
+
+### Subcapa MAC
+
+
+
+
