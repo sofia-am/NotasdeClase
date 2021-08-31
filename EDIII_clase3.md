@@ -108,5 +108,6 @@ void retardo(uint32_t tiempo){
     }
 }
 ```
+*Clase siguente, aprendemos a utilizar interrupciones y no hacerlo por polling*
 
 
