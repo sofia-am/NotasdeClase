@@ -37,7 +37,7 @@ trucazo,utilizar funcines para las configuraciones, ejemplo `confGPIO()`
 ```c
 void configGPIO(){
 	//interrupcion por flanco de subida
-	LPC_GPIOINT -> IO0IntEnR |= (0<<15); //ponemos un 0 en la pos 15 de ese registro//tabla 9.5.2
+	LPC_GPIOINT -> IO0IntEnR |= (0<<15); //ponemos un 0 en la pos 15 de ese registro//tabla 9.5.6.2
 	LPC_GPIOINT -> IO0IntClr |= (1<<15);
 
 /* lo que pide el fabricante es que cada vez que toquemos los registros, se genere una limpieza
