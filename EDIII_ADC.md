@@ -7,7 +7,7 @@ Todos los bloques naranjas pueden trabajar mientras funciona el ADC ¿? o DMA
 - Multiplexado de entrada de 8 pines
 - Modo de apagado
 - `VREFN` a `VREFP` (no tienen que superar los 3,3 V cuando uso el pin de la placa como conversor. Si lo uso como puerto aguanta hasta 5V)
-- Tasa de conversión de 200 kHz
+- Tasa de conversión de 200 kHz (o frec de muestreo)
 - Modo de conversion de rafaga (burst) para entradas simples o multiples, es una conversion permanente del valor
 - Conversion opcional en la transicion del pin de entrada o la señal de coincidencia del temporizador. 
 
